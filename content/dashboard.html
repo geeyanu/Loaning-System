@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Applicant Dashboard</title>
+  <link rel="stylesheet" href="../style/dashboardstyle.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="title-sidebar">
+      <h2>My Dashboard</h2>
+    </div>
+
+    <div class="sidebar-options">
+      <ul>
+        <li><a href="#"><i class='bx bx-edit'></i> Apply Loan</a></li>
+        <li><a href="#"><i class='bx bx-list-ul'></i> My Applications</a></li>
+        <li><a href="#"><i class='bx bx-log-out'></i> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Welcome, Applicant!</h1>
+      <p>You can apply for a loan and track your application.</p>
+    </header>
+
+    <div class="form-section">
+      <section class="form-info">
+        <h2>Request for a Loan</h2>
+        <form method="POST" action="">
+          <input type="number" name="amount" min="0" max="100,000" placeholder="Enter loan amount" required>
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </div>
+    
+    
+    
+    <div>
+      <section class="table-section">
+      <h2>My Loan Applications</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>₱12,000</td>
+            <td class="pending">Pending</td>
+            <td>April 18, 2025</td>
+          </tr>
+          <tr>
+            <td>₱9,500</td>
+            <td class="approved">Approved</td>
+            <td>March 22, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/loginstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <form action="./data/login.php" method="POST"></form>
+    <title>Login</title>
+</head>
+<body>
+        <header class="home">
+            <h1 class="logo-word">Loan System</h1>
+        </header>
+       <div class="main-container">
+         <div class="container">
+            <form>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <label for="Username">Username or email address</label><br>
+                    <input type="text" id="Username" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <label for="Password">Password</label><br>
+                    <input type="password" id="Password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                
+                <div class="remember-forgot">
+                   <label><input type="checkbox" >Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                
+                <button class="btn" type="submit">Sign in</button>
+
+                <div class="register-account">
+                    <p>Need an account?<a href="register.html"> Sign up</a></p>
+                </div>                
+            </form>
+        </div>
+    </div>
+        
+</body>
+</html>

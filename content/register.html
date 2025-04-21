@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Loan System</title>
+  <link rel="stylesheet" href="../style/registerstyle.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="home">
+    <h1 class="logo-word">Loan System</h1>
+  </header>
+
+  <div class="main-container">
+    <div class="container">
+      <form action="register.php" method="POST">
+        <h1>Register</h1>
+
+        <div class="input-box">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required />
+          <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+          <i class='bx bx-hide toggle-password' toggle="#password"></i>
+        </div>
+
+        <div class="input-box">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter your password" required />
+          <i class='bx bx-hide toggle-password' toggle="#confirm_password"></i>
+        </div>
+
+        <button class="btn" type="submit">Register</button>
+
+        <div class="register-account">
+          <p>Already have an account?<a href="login.html"> Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const toggles = document.querySelectorAll('.toggle-password');
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const input = document.querySelector(toggle.getAttribute('toggle'));
+        const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+        input.setAttribute('type', type);
+        toggle.classList.toggle('bx-hide');
+        toggle.classList.toggle('bx-show');
+      });
+    });
+  </script>
+</body>
+</html>
